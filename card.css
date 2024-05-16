@@ -1,0 +1,126 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fdc3c9;
+}
+
+.container {
+  position: relative;
+}
+
+.valentines {
+  position: relative;
+  top: 50px;
+  cursor: pointer;
+  animation: up 3s linear infinite;
+}
+
+.envelope {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  background-color: #8202d2;
+  border: 2px solid rgb(76, 1, 25);
+  border-radius: 5px;
+}
+
+.envelope:before {
+  background-color: #8202d2;
+  content: "";
+  position: absolute;
+  width: 212px;
+  height: 212px;
+  transform: rotate(45deg);
+  top: -105px;
+  left: 44px;
+  border-radius: 30px 0 0 0;
+}
+
+.card {
+    position: relative;
+    background-color: #ecbae6;
+    width: 270px;
+    height: 170px;
+    bottom: 190px;
+    left: 15px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: -5px -5px 100px rgba(0, 0, 0, 0.4);
+    animation: cd 3s linear infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon {
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    margin-bottom: 10px; /* Add margin for spacing */
+}
+
+.icon {
+    position: absolute;
+    bottom: 10px; /* You can adjust this value to fine-tune the vertical position */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@keyframes cd {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-100px);
+  }
+}
+
+.card:before {
+  content: "";
+  position: absolute;
+  border: 3px solid #a504f6;
+  border-style: dotted;
+  width: 240px;
+  height: 140px;
+  left: 12px;
+  top: 12px;
+  bottom: 0px;
+}
+
+.text {
+  position: absolute;
+  font-family: "Brush Script MT", cursive;
+  font-size: 28px;
+  text-align: center;
+  line-height: 25px;
+  top: 20px;
+  left: 50px; /* Adjusted the left property */
+  color: #003049;
+}
+.text1 {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #003049;
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: #d62828; /* Added missing property */
+  display: inline-block; /* Added missing property */
+  position: absolute; /* Added missing property */
+  height: 30px; /* Adjust as needed */
+  width: 30px; /* Adjust as needed */
+  top: 0;
+}
+
+.left-container {
+  float: left;
+  width: 300px;
+}
+
